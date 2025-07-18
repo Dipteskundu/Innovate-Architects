@@ -1,0 +1,520 @@
+ @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ body {
+     font-family: "Work Sans", sans-serif;
+     font-optical-sizing: auto;
+     font-weight: 400;
+     font-style: normal;
+     line-height: 1.6;
+ }
+
+ /*                shared styles           */
+ .display-flex {
+     display: flex;
+ }
+
+ /* dark 01 */
+ .text-dark {
+     color: #131313;
+ }
+
+ /* dark 02 */
+ .text-gray {
+     color: #424242;
+ }
+
+ /* dark-03 */
+ .text-light-gray {
+     color: #727272;
+ }
+
+ .bg-lite {
+     background-color: rgba(255, 144, 14, 0.10);
+ }
+
+ .btn-primary {
+     background-color: #FF900E;
+     color: white;
+     padding: 20px 25px;
+     font-size: 1.25rem;
+     font-weight: 600;
+     border-radius: 8px;
+     border: none;
+     cursor: pointer;
+     transition: background-color 0.3s ease;
+ }
+
+ .btn-primary:hover {
+     background-color: tomato;
+ }
+
+ main {
+     max-width: 1440px;
+     margin: 0 auto;
+     padding: 0 20px;
+ }
+
+ main>section {
+     margin-top: 130px;
+ }
+
+ /*              header styles             */
+ .header {
+     padding: 20px 0;
+ }
+
+ .nav-bar {
+     justify-content: space-between;
+     align-items: center;
+     padding: 0 100px;
+     flex-wrap: wrap;
+ }
+
+ .nav-links {
+     align-items: center;
+     flex-wrap: wrap;
+ }
+
+ .nav-item {
+     list-style: none;
+     margin-right: 30px;
+ }
+
+ .nav-item:last-child {
+     margin-right: 0;
+ }
+
+ .nav-link {
+     text-decoration: none;
+     font-weight: 500;
+     font-size: 1.125rem;
+     transition: color 0.3s ease;
+ }
+
+ .nav-link:hover {
+     color: tomato;
+ }
+
+ .brand-name {
+     font-size: 2.5rem;
+     font-weight: 700;
+     color: #131313;
+ }
+
+ /*             banner related content         */
+ .banner {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     max-width: 1440px;
+     margin: 0 auto;
+     padding: 0 100px;
+     padding-top: 50px;
+ }
+
+ .banner-content {
+     max-width: 850px;
+     margin: 0 auto;
+     text-align: center;
+     margin-bottom: 50px;
+ }
+
+ .banner-title {
+     font-size: 3.5rem;
+     font-weight: 700;
+     color: #131313;
+     margin-bottom: 20px;
+     line-height: 1.2;
+ }
+
+ .banner-content p {
+     color: #727272;
+     font-size: 1rem;
+     line-height: 1.6;
+     margin-bottom: 30px;
+ }
+
+ .banner-image {
+     width: 100%;
+     max-width: 1000px;
+     height: auto;
+     object-fit: cover;
+     border-radius: 8px;
+ }
+
+ /*                Features Section              */
+ .features-details {
+     display: flex;
+     align-items: center;
+     gap: 70px;
+     padding: 0 100px;
+ }
+
+ .team-images {
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     gap: 24px;
+     flex: 1;
+ }
+
+ .team-images img {
+     width: 100%;
+     height: 250px;
+     object-fit: cover;
+     border-radius: 8px;
+     transition: transform 0.3s ease;
+ }
+
+ .team-images img:hover {
+     transform: scale(1.05);
+ }
+
+ .features-description {
+     flex: 1;
+ }
+
+ .features-description h2 {
+     margin-bottom: 24px;
+     line-height: 1.2;
+ }
+
+ .features-description p {
+     margin-bottom: 32px;
+     font-size: 1rem;
+     line-height: 1.6;
+ }
+
+ #quick-list {
+     font-size: 2.8rem;
+     color: #727272;
+     font-weight: 500;
+ }
+
+ #of-our {
+     font-size: 2.8rem;
+     color: #131313;
+     font-weight: 700;
+ }
+
+ #last {
+     font-size: 2.8rem;
+     color: #FF900E;
+     font-weight: 700;
+ }
+
+ /*                    feature card container             */
+
+
+
+ .features {
+     gap: 140px;
+ }
+
+ #feature-section-title {
+     border-left: 5px solid #FF900E;
+     padding-left: 20px;
+     font-size: 30px;
+ }
+
+ .feature-card {
+     padding: 30px;
+     border-radius: 8px;
+     box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+     margin-bottom: 20px;
+ }
+
+ .feature-card .feature-title {
+     font-weight: 600;
+     font-size: 1.25rem;
+     margin-top: 0px;
+     margin-bottom: 0px;
+ }
+
+ #experience-badge {
+     padding: 45px 42px;
+     font-size: 1.5rem;
+     font-weight: 500;
+     margin-left: -100px;
+     margin-top: -100px;
+ }
+
+ #experience-year {
+     font-size: 2rem;
+     font-weight: 700;
+ }
+
+ #experience-badge:hover {
+     color: white;
+     background-color: #FF900E;
+
+ }
+
+
+ .featured-architect img {
+     width: 100%;
+ }
+
+ /* facts-container */
+ .facts-container {
+     color: #131313;
+     margin-top: 10px;
+ }
+
+ .facts-container h1 {
+     font-size: 2.5rem;
+     font-weight: 700;
+ }
+
+ /* Achivement-cards */
+ .card-contaier {
+     border: 1px solid #FF900E;
+     width: 240px;
+     height: 240px;
+     border-radius: 8px;
+     justify-content: center;
+ }
+
+ .achivement-cards {
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+     text-align: center;
+     margin-left: 50px;
+ }
+
+ .only-card {
+     padding: 50px;
+ }
+
+ .numbers {
+     font-size: 2.8rem;
+ }
+
+ .icons {
+     font-size: 3.5rem;
+ }
+
+ /*           sponsors-container          */
+ .sponsor-desacription {
+     max-width: 600px;
+     margin: 0 auto;
+     text-align: center;
+     margin-bottom: 30px;
+ }
+
+ .sponsor-desacription h2 {
+     font-size: 2.5rem;
+     font-weight: 700;
+     margin-bottom: 20px;
+ }
+
+ .sponsors-container {
+     align-items: center;
+     text-align: center;
+     justify-content: center;
+     margin-bottom: 2.5rem;
+ }
+
+ .sponsor-logos {
+     gap: 8rem;
+     flex-wrap: wrap;
+
+ }
+
+ .sponsor-logos img {
+     width: 130px;
+     height: auto;
+     filter: grayscale(100%);
+ }
+
+
+ /*             footer section        */
+ footer {
+     margin: 0px 150px;
+     margin-bottom: 3rem;
+ }
+
+ .copy-right {
+     text-align: center;
+     padding: 20px 0;
+     font-size: 1rem;
+     background-color: #FFF4E7;
+ }
+
+
+ /*             Responsive media queries            */
+ @media screen and (max-width: 1200px) {
+     .nav-bar {
+         padding: 0 50px;
+     }
+
+     .banner {
+         padding: 0 50px;
+         padding-top: 40px;
+     }
+
+     .features-details {
+         padding: 0 50px;
+         gap: 50px;
+     }
+
+     .banner-title {
+         font-size: 3rem;
+     }
+
+     #quick-list,
+     #of-our,
+     #last {
+         font-size: 2.5rem;
+     }
+ }
+
+ @media screen and (max-width: 992px) {
+     .nav-bar {
+         padding: 0 30px;
+     }
+
+     .banner {
+         padding: 0 30px;
+         padding-top: 30px;
+     }
+
+     .features-details {
+         padding: 0 30px;
+         gap: 40px;
+     }
+
+     .banner-title {
+         font-size: 2.75rem;
+     }
+
+     .brand-name {
+         font-size: 2.25rem;
+     }
+
+     #quick-list,
+     #of-our,
+     #last {
+         font-size: 2.2rem;
+     }
+ }
+
+ @media screen and (max-width: 768px) {
+     .nav-bar {
+         flex-direction: column;
+         gap: 20px;
+         padding: 0 20px;
+     }
+
+     .nav-links {
+         flex-direction: column;
+         gap: 15px;
+         width: 100%;
+         text-align: center;
+     }
+
+     .nav-item {
+         margin-right: 0;
+     }
+
+     .banner {
+         padding: 0 20px;
+         padding-top: 30px;
+     }
+
+     .banner-title {
+         font-size: 2.5rem;
+     }
+
+     .brand-name {
+         font-size: 2rem;
+         text-align: center;
+     }
+
+     .features-details {
+         flex-direction: column;
+         gap: 50px;
+         padding: 0 20px;
+     }
+
+     .team-images {
+         grid-template-columns: 1fr;
+         gap: 20px;
+     }
+
+     .team-images img {
+         height: 200px;
+     }
+
+     #quick-list,
+     #of-our,
+     #last {
+         font-size: 2rem;
+     }
+
+     .features-description {
+         text-align: center;
+     }
+
+     main>section {
+         margin-top: 80px;
+     }
+ }
+
+ @media screen and (max-width: 576px) {
+     .nav-bar {
+         padding: 0 15px;
+     }
+
+     .banner {
+         padding: 0 15px;
+         padding-top: 20px;
+     }
+
+     .banner-title {
+         font-size: 2rem;
+         margin-bottom: 15px;
+     }
+
+     .brand-name {
+         font-size: 1.75rem;
+     }
+
+     .features-details {
+         padding: 0 15px;
+         gap: 30px;
+     }
+
+     .team-images {
+         gap: 15px;
+     }
+
+     .team-images img {
+         height: 180px;
+     }
+
+     #quick-list,
+     #of-our,
+     #last {
+         font-size: 1.8rem;
+     }
+
+     .banner-content p,
+     .features-description p {
+         font-size: 0.9rem;
+     }
+
+     .btn-primary {
+         padding: 15px 20px;
+         font-size: 1.125rem;
+     }
+
+     main>section {
+         margin-top: 60px;
+     }
+ }
